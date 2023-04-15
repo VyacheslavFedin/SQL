@@ -91,5 +91,5 @@ SELECT o.ord_datetime, o.ord_an, a.an_name, a.an_price, a.an_id
 FROM analysis a 
 JOIN Orders o 
 ON o.ord_an = a.an_id -- Условие соед-я
-WHERE (o.ord_datetime >= '2020-02-05 00:00:00' AND o.ord_datetime <= '2020-02-11 00:00:00');
+WHERE (o.ord_datetime >= '2020-02-05 00:00:00' AND o.ord_datetime <= '2020-02-11 23:59:59');
 
